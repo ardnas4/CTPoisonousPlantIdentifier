@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutHeaderMain"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@drawable/header_background"
+        android:padding="5dp"
+        app:layout_anchorGravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ct_poisonous_plant_classifier"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.195" />
+
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/welcome"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/app_name"
+            app:layout_constraintStart_toStartOf="@+id/app_name"
+            app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/instructions"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/textWelcome"
+            app:layout_constraintStart_toStartOf="@+id/textWelcome"
+            app:layout_constraintTop_toBottomOf="@+id/textWelcome" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/ivy_info_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="27dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_border"
+            android:contentDescription="@string/poison_ivy"
+            android:scaleType="fitXY"
+            android:src="@drawable/ivy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/poison_ivy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/poison_ivy"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="@+id/ivy_info_button"
+            app:layout_constraintStart_toStartOf="@+id/ivy_info_button"
+            app:layout_constraintTop_toBottomOf="@+id/ivy_info_button" />
+
+        <ImageButton
+            android:id="@+id/sumac_info_button"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_border"
+            android:contentDescription="@string/poison_sumac"
+            android:scaleType="fitXY"
+            android:src="@drawable/sumac"
+            app:layout_constraintEnd_toEndOf="@+id/ivy_info_button"
+            app:layout_constraintStart_toStartOf="@+id/ivy_info_button"
+            app:layout_constraintTop_toBottomOf="@+id/poison_ivy" />
+
+        <TextView
+            android:id="@+id/poison_sumac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/poison_sumac"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/sumac_info_button"
+            app:layout_constraintStart_toStartOf="@+id/sumac_info_button"
+            app:layout_constraintTop_toBottomOf="@+id/sumac_info_button" />
+
+        <ImageButton
+            android:id="@+id/oak_info_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="27dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_border"
+            android:contentDescription="@string/poison_oak"
+            android:scaleType="fitXY"
+            android:src="@drawable/oak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/poison_oak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/poison_oak"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/oak_info_button"
+            app:layout_constraintStart_toStartOf="@+id/oak_info_button"
+            app:layout_constraintTop_toBottomOf="@+id/oak_info_button" />
+
+        <ImageButton
+            android:id="@+id/treatments_info_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_border"
+            android:contentDescription="@string/treatments"
+            android:scaleType="fitXY"
+            android:src="@drawable/treatments"
+            app:layout_constraintEnd_toEndOf="@+id/oak_info_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/oak_info_button"
+            app:layout_constraintTop_toBottomOf="@+id/poison_oak" />
+
+        <TextView
+            android:id="@+id/treatments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/treatments"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/treatments_info_button"
+            app:layout_constraintStart_toStartOf="@+id/treatments_info_button"
+            app:layout_constraintTop_toBottomOf="@+id/treatments_info_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/classify_plants_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        app:backgroundTint="@color/colorTrendingStart"
+        android:text="@string/classify_plants"
+        android:drawableLeft="@drawable/ic_camera"
+        app:iconGravity="end" />
+
+</LinearLayout>

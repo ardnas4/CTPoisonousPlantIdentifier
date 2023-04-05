@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/poison_ivy_image"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_width="230dp"
+        android:layout_height="133dp"
         android:layout_margin="8dp"
         android:layout_marginTop="36dp"
         android:contentDescription="@string/app_name"
@@ -37,6 +37,7 @@
         android:id="@+id/poison_ivy_info_text"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:gravity="center_vertical"
         android:text="@string/poison_ivy_info"
         android:textColor="@color/black"
@@ -50,7 +51,7 @@
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/back"
         app:backgroundTint="@color/colorDivider"
         app:layout_constraintEnd_toEndOf="parent"

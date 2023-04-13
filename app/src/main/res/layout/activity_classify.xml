@@ -1,76 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@color/green6"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/selected_image_view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/image_preview"
-        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutHeaderClassify" />
+        app:layout_constraintTop_toBottomOf="@+id/classify_directions" />
 
-    <Button
-        android:id="@+id/select_image_button"
+    <TextView
+        android:id="@+id/disclaimer_textview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/colorTrendingStart"
-        android:text="@string/select_image"
+        android:gravity="center"
+        android:text="@string/Disclaimer"
+        android:textColor="@color/red"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/received_info_textview" />
+
+    <Button
+        android:id="@+id/send_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/green2"
+        android:drawableLeft="@drawable/identify_plant"
+        android:text="@string/send_image"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disclaimer_textview"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/received_info_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selected_image_view" />
 
-    <Button
-        android:id="@+id/send_image_button"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/colorTrendingStart"
-        android:text="@string/send_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_image_button" />
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:background="@color/green2"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <Button
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/back"
-        app:backgroundTint="@color/colorDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/send_image_button"></Button>
+        <ImageButton
+            android:id="@+id/go_back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="12dp"
+            android:contentDescription="@string/go_back"
+            app:srcCompat="@drawable/return_icon" />
+
+        <ImageButton
+            android:id="@+id/take_picture_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="12dp"
+            android:contentDescription="@string/take_picture_button"
+            app:srcCompat="@drawable/camera_icon" />
+
+        <ImageButton
+            android:id="@+id/select_image_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="12dp"
+            android:contentDescription="@string/select_image"
+            app:srcCompat="@drawable/camera_roll" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/layoutHeaderClassify"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/classify_plants"
-        android:textColor="@color/colorTrendingStart"
-        android:textSize="25sp"
+        android:id="@+id/classify_directions"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="@string/classify_directions"
+        android:textColor="@color/black"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

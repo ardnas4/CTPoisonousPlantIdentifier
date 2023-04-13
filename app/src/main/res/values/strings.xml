@@ -17,6 +17,10 @@
     <string name="classify_plants">Classify a Poisonous Plant</string>
     <string name="back">Back to home</string>
     <string name="image_preview">Preview</string>
-    <string name="select_image">Select Image</string>
-    <string name="send_image">Send Image</string>
+    <string name="select_image">PICK FROM GALLERY</string>
+    <string name="send_image">Classify Plant</string>
+    <string name="take_picture_button">TAKE PICTURE</string>
+    <string name="Disclaimer">Disclaimer: This AI is NOT infallible. Regardless of the result, please take precaution and use your best judgement.</string>
+    <string name="go_back">Return</string>
+    <string name="classify_directions">Take a picture from the camera or gallery to classify a plant!</string>
 </resources>

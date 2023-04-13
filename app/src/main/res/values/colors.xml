@@ -7,13 +7,20 @@
     <color name="blue">#1E9CD5</color>
     <color name="black">#FF000000</color>
     <color name="colorWhite">#FFFFFFFF</color>
-    <color name = "colorPrimary">#2BCC6F</color>
-    <color name= "colorPrimaryDark">#2BCC6F</color>
-    <color name= "colorAccent">#333333</color>
-    <color name = "colorPrimaryLight">#E9F8F1</color>
-    <color name = "colorBackground">#ffffff</color>
-    <color name = "colorTrendingStart">#38933C</color>
-    <color name = "colorTrendingEnd">#96C93D</color>
-    <color name = "colorDivider">#988D8D</color>
+    <color name="colorPrimary">#2BCC6F</color>
+    <color name="colorPrimaryDark">#2BCC6F</color>
+    <color name="colorAccent">#333333</color>
+    <color name="colorPrimaryLight">#E9F8F1</color>
+    <color name="colorBackground">#C6DEA6</color>
+    <color name="colorTrendingStart">#4f772d</color>
+    <color name="colorTrendingEnd">#96C93D</color>
+    <color name="colorDivider">#4f772d</color>
+    <color name="red">#D60000</color>
+    <color name="green1">#7ab0a1</color>
+    <color name="green2">#4f772d</color>
+    <color name="green3">#132A13</color>
+    <color name="green4">#90a955</color>
+    <color name="green5">#ecf39e</color>
+    <color name="green6">#C6DEA6</color>
 
 </resources>
